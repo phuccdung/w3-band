@@ -68,9 +68,52 @@
         </div>
 
         <!-- Tour section -->
-        <div class="content-section">
-            <h2 class="section-heading">TOUR DATES</h2>
-            <p class="section-subheading">Remember to book your tickets!</p>
+        <div class="tour-section">
+            <div class="content-section">
+                <h2 class="text-white section-heading">TOUR DATES</h2>
+                <p class="text-white section-subheading">Remember to book your tickets!</p>
+                
+                <ul class="tickets-list">
+                    <li>September <span class="sold-out">Sold out</span> </li>
+                    <li>October  <span class="sold-out">Sold out</span> </li>
+                    <li>November <Span class="quantity">3</Span>  </li>
+                </ul>
+
+                <!-- places -->
+                <div class="places-list">
+                    <div class="place-item">
+                        <img src="./asset/img/places/newyork.jpg" alt="NewYork" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading"> New York</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="" class="place-buy-btn">Buy Tickets</a>
+                        </div>
+                    </div>
+
+                    <div class="place-item">
+                        <img src="./asset/img/places/paris.jpg" alt="NewYork" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading"> Paris</h3>
+                            <p class="place-time">Sat 28 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="" class="place-buy-btn">Buy Tickets</a>
+                        </div>
+                    </div>
+
+                    <div class="place-item">
+                        <img src="./asset/img/places/sanfran.jpg" alt="NewYork" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading"> Sun 29 Nov 2016</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="" class="place-buy-btn">Buy Tickets</a>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
 
         </div>
 
@@ -86,6 +129,47 @@
 
       <div id="footer">
 
+      </div>
+
+      <div class="modal">
+          <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+              <header class="modal-header">
+                  
+
+                  <i class="ti-bag modal-heading-icon">
+                      Tickets
+                  </i>                 
+              </header>
+              <div class="modal-body">
+                <label for="quantity-tickets" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                      Tickets, $15 per person
+                  </label>
+
+                  <input id="quantity-tickets" type="text" class="modal-input" placeholder=" How many?">
+                  
+
+                  <label for="email-tickets" class="modal-label">
+                      <i class="ti-user"></i>
+                       Sen to
+                    </label>
+             
+                    <input id="email-tickets" type="email" class="modal-input" placeholder=" Enter email...">
+                    
+                    <button id="buy-tickets">
+                        Pay
+                        <i class="ti-check"></i>
+                    </button>
+
+              </div>
+              <footer class="modal-footer">
+                  <p class="modal-help"> Need <a href="">Help?</a> </p>
+              </footer>
+              
+          </div>
       </div>
    </div>
 </body>
