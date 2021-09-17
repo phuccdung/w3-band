@@ -87,7 +87,7 @@
                             <h3 class="place-heading"> New York</h3>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="" class="place-buy-btn">Buy Tickets</a>
+                            <button  class="js-buy-ticket place-buy-btn">Buy Tickets</button>
                         </div>
                     </div>
 
@@ -97,7 +97,7 @@
                             <h3 class="place-heading"> Paris</h3>
                             <p class="place-time">Sat 28 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="" class="place-buy-btn">Buy Tickets</a>
+                            <button  class="js-buy-ticket place-buy-btn">Buy Tickets</button>
                         </div>
                     </div>
 
@@ -107,7 +107,7 @@
                             <h3 class="place-heading"> Sun 29 Nov 2016</h3>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="" class="place-buy-btn">Buy Tickets</a>
+                            <button  class="js-buy-ticket place-buy-btn">Buy Tickets</button>
                         </div>
                     </div>
 
@@ -131,9 +131,9 @@
 
       </div>
 
-      <div class="modal">
-          <div class="modal-container">
-            <div class="modal-close">
+      <div class="modal js-modal">
+          <div class="modal-container js-mode-container">
+            <div class="modal-close  js-modal-close">
                 <i class="ti-close"></i>
             </div>
               <header class="modal-header">
@@ -172,5 +172,26 @@
           </div>
       </div>
    </div>
+
+   <script>
+       const buyBtns =document.querySelectorAll('.js-buy-ticket')
+       const modal= document.querySelector('.js-modal')
+       const modelContainer=document.querySelector('.js-mode-container')
+      const modalclose=document.querySelector('.js-modal-close')
+       function showBuyTickets(){
+        modal.classList.add('open')
+       } 
+       function hideBuyTickets(){
+        modal.classList.remove('open')
+       } 
+       for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+        modalclose.addEventListener('click', hideBuyTickets)
+        modal.addEventListener('click', hideBuyTickets)
+        modelContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>

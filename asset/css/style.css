@@ -160,7 +160,7 @@ margin-top:48px;
 }
 #content .member-name {
     font-size:15px;
-   
+   margin-bottom: 24px;
 
 }
 #content .member-img{
@@ -299,6 +299,7 @@ margin-top: 15px;
     max-width: calc(100% -32px);
     min-height:200px;
     position: relative;
+    animation: modalFadeIn ease 0.9s;
 }
 .modal-header {
     background-color:#009688;
@@ -349,4 +350,15 @@ margin-bottom: 12px;
 }
 .modal-footer a{
     color: #2196F3;
+}
+@keyframes modalFadeIn {
+    from { 
+        opacity: 0;
+    transform: translateY(-180px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
