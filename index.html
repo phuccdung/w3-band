@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta form-control="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./asset/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./asset/css/style.css">
@@ -49,17 +49,17 @@
             <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="member-list">
                 <div class="member-item">
-                    <p class="member-name">Name</p>
+                    <p class="member-form-control">form-control</p>
                     <img src="./asset/img/band/bandmember1.jpg" alt="" class="member-img">
                 </div>
 
                 <div class="member-item">
-                    <p class="member-name">Name</p>
+                    <p class="member-form-control">form-control</p>
                     <img src="./asset/img/band/bandmember1.jpg" alt="" class="member-img">
                 </div>
                 
                 <div class="member-item">
-                    <p class="member-name">Name</p>
+                    <p class="member-form-control">form-control</p>
                     <img src="./asset/img/band/bandmember1.jpg" alt="" class="member-img">
                 </div>
 
@@ -80,8 +80,8 @@
                 </ul>
 
                 <!-- places -->
-                <div class="places-list">
-                    <div class="place-item">
+                <div class="places-list row">
+                    <div class="col place-item">
                         <img src="./asset/img/places/newyork.jpg" alt="NewYork" class="place-img">
                         <div class="place-body">
                             <h3 class="place-heading"> New York</h3>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="place-item">
+                    <div class="col place-item">
                         <img src="./asset/img/places/paris.jpg" alt="NewYork" class="place-img">
                         <div class="place-body">
                             <h3 class="place-heading"> Paris</h3>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
 
-                    <div class="place-item">
+                    <div class="col place-item">
                         <img src="./asset/img/places/sanfran.jpg" alt="NewYork" class="place-img">
                         <div class="place-body">
                             <h3 class="place-heading"> Sun 29 Nov 2016</h3>
@@ -122,6 +122,36 @@
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-subheading">Fan? Drop a note!</p>
 
+            <div class="row contact-content">
+                <div class="col contact-info">
+                    <p><i class="ti-location-pin"></i> Chicago, US</p>
+                    <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                    <p><i class="ti-email"></i> Email: mail@mail.com</p>
+
+                </div>
+
+                <div class="col contact-form">
+                    <form action="">
+                        <div class="row ">
+                            <div class="col col-half ">
+                                <input type="text" class="form-control" required placeholder="Name">
+                            </div>
+                            <div class="col col-half">
+                                <input type="email" class="form-control" required placeholder="Email">
+                            </div>
+                            
+                        </div>
+
+                        <div class="row contact-message">
+                            <div class="col col-full">
+                                <input type="text" class="form-control" required placeholder="Message">
+                            </div>
+                        </div>
+                        <input class="form-submit-btn" type="submit" value="Send">
+                    </form>
+                </div>
+
+            </div>
         </div>
         
 
