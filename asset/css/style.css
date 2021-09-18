@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family:helvetica, arial, sans-serif;
 
 }
@@ -151,7 +152,7 @@ header .search-btn:hover {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -223,7 +224,7 @@ margin-top: -3px;
 /* place */
 .places-list {
 margin-top:32px;
-margin-bottom: 48px;
+
 
 }
 .place-item {
@@ -314,9 +315,37 @@ width: 100%;
     padding: 10px 16px;
     float: right;
     cursor: pointer;
+    border: none;
+}
+.form-submit-btn:hover{
+    background-color: #ccc;color: #000;
+}
+/* map section */
+.map-section img{
+    width: 100%;
 }
 #footer {
+padding: 64px 16px 16px;
+text-align: center;
+}
+.socials-list {
+    font-size:24px;
+    
+}
+.socials-list a {
+    color: rgba(0,0 ,0,0.6);
+    text-decoration: none;
+}
+.socials-list a :hover{
+    color: rgba(0,0 ,0,0.4);
+}
+.copyright {
+    margin-top: 20px;
+    color: rgba(0,0 ,0,0.6);
 
+}
+.copyright a{
+    color: rgba(0,0 ,0,0.6);
 }
 
 /* modal */
