@@ -7,6 +7,8 @@
     <title>The Band</title>
     <link rel="stylesheet" href="./asset/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+
 </head>
 <body>
    <div id="main">
@@ -29,8 +31,11 @@
             </li>
         </ul>
 
-        <div class="search-btn">
+        <div  class="search-btn">
             <i class="search-icon ti-search"></i>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
         </div>
       </div>
 
@@ -160,7 +165,7 @@
             
         </div>
 
-      </div>
+      </div>   
 
       <div id="footer">
         <div class="socials-list">
@@ -235,6 +240,16 @@
         modelContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+    </script>
+
+    <script>
+        var mobileMenu =document.getElementById('mobile-menu');
+        var header =document.getElementById('header');
+        mobileMenu.onclick = function(){
+            var isOpen=header.clientHeight===46;
+        }
+
+
     </script>
 </body>
 </html>

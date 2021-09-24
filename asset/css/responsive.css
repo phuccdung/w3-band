@@ -1,0 +1,28 @@
+/* pc */
+@media (min-width:1024px){
+    /* #header .mobile-menu-btn
+    {
+        display: none;
+    } */
+}
+/* tablet */
+@media (min-width:740)and (max-width:123)
+{
+    /* #header .mobile-menu-btn
+    {
+        display: none;
+    } */
+}
+/* modi */
+@media (max-width:740px){
+    #nav>li{
+        display: block;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        float: right;
+    padding:0 21px;
+    }
+}
