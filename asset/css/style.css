@@ -105,8 +105,12 @@ background-color: #ccc;
     cursor: pointer;
     background-color: #f44336;
 }
-header .search-btn:hover {
 
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 #header .menu-icon,
 #header .search-icon {
@@ -118,7 +122,7 @@ header .search-btn:hover {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/asset/img/slider/slider1.jpg) top center / cover no-repeat;
+    background: url(../img/slider/slider1.jpg) top center / cover no-repeat;
     
 }
 #slider .text-content {
