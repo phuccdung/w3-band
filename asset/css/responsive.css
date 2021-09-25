@@ -10,12 +10,30 @@
 }
 /* modi */
 @media (max-width:740px){
+    #header{
+        overflow: hidden;
+    }
+    #header .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #header .subnav a{
+        color: #fff;
+        padding:5px 41px;
+    }
 
     #nav{
         display: block;
     }
     #nav>li{
         display: block;
+    }
+    #nav>li:first-child{
+        display: inline-block;
+    }
+    #nav li a {
+        display: block;
+        padding: 1px 24px;
     }
     #header .search-btn {
         display: none;
@@ -26,6 +44,25 @@
         display:block
     }
 
+    #content .member-mobile{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #content .member-item-mobile{
+        width: 60%;
+    }
+    .place-item{
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .contact-content{
+        width: 100%;
+    }
+    .contact-form{
+        width: 100%;
+        margin-top:16px;
+    }
 
 }   
     

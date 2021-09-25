@@ -41,7 +41,7 @@ html {
    height: 46px; 
    z-index: 1;
    background-color: #000;
-   overflow: hidden;
+
 }
 #nav {
     display: inline-block;
